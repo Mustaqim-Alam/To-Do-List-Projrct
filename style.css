@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(81, 8, 8);
+}
+
+.navbar {
+  color: rgb(96, 160, 137);
+  font-weight: bolder;
+  font-family: var(--font2);
+}
+
+.todo-main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.todo-container {
+  background-color: rgba(211, 215, 218, 0.916);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  height: 500px;
+  padding: 15px;
+}
+.todo-container h5 {
+  color: rgb(167, 164, 167);
+}
+
+.day-time-container {
+  display: flex;
+  /* background-color: blanchedalmond; */
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 3rem;
+  font-family: var(--font2);
+  font-weight: bolder;
+}
+.input-section {
+  /* background-color: black; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.input-section input {
+  width: 85%;
+  height: 2.6rem;
+  border: 2px solid darkred;
+  border-right: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 2px 8px;
+  padding-top: 0;
+}
+.input-section button {
+  width: 72px;
+  border: 2px solid darkred;
+  border-left: none;
+  background-color: rgb(182, 233, 74);
+  font-weight: 800;
+  /* padding: 10px; */
+}
+.input-section button:click {
+  background-color: rgb(184, 135, 135);
+}
+.preview-buttons {
+  width: 100%;
+}
+
+.preview-buttons ul {
+  width: 100%;
+  padding: 0 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.preview-buttons ul li {
+  list-style: none;
+  background-color: rgb(167, 164, 167);
+  width: 110px;
+  height: 1.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid darkred;
+}
+
+.preview-buttons ul li a {
+  text-decoration: none;
+  color: black;
+  /* background-color: rgb(170, 99, 170); */
+  padding: 0 10px; 
+  display: block; 
+}
+
+.list-container {
+  width: 100%;
+  overflow-y: scroll;
+}
+.tasks-list {
+  background-color: rgb(175, 168, 234);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* color: white; */
+  margin-top: 7px;
+  height: 2.5rem;
+  justify-content: space-between;
+  padding: 12px;
+}
+.tasks-list input {
+  background-color: aliceblue;
+  width: 20px;
+  height: 20px;
+}
+.tasks-list img {
+  background-color: rgb(229, 229, 135);
+  width: 15px;
+  height: 17pxpx;
+  padding-bottom: 2px;
+  /* border: 2px solid black; */
+}
+
+@media only screen and (max-width: 600px) {
+  .todo-container {
+    width: 90%;
+  }
+
+  .input-section {
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+  .input-section input {
+    width: 100%;
+    border: 2px solid darkred;
+    border-radius: 12px;
+  }
+  .input-section button {
+    width: 70%;
+    padding: 5px 0;
+    border: 2px solid darkred;
+    border-radius: 12px;
+  }
+}
+
+@media only screen and (max-width: 200px) {
+  
+  .preview-buttons ul li a{
+    /* width: 100%; */
+    font-size: 7vw;
+    /* font-weight: 400; */
+  }
+  .preview-buttons ul{
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .preview-buttons ul {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+  }
+
+  .preview-buttons ul li {
+    width: 100%; 
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .day-time-container {
+    flex-direction: column;
+  }
+}
